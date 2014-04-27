@@ -1,0 +1,564 @@
+/*!
+
+	Straightway - Coming soon unique creative Page
+ 	Copyright (c) 2014, Subramanian 
+
+	Author: Subramanian
+    Profile: themeforest.net/user/FMedia/
+	
+    Version: 1.0.0
+	Release Date: February 2014
+	
+*/	
+
+/* This file is used only to change the color of the template */
+		
+	
+	body.white_version { color: #111111; }
+	body.white_version, .white_version .pageFade { background-color: #f0f0f0 !important; } 
+	.lightStyle { color: #111111	}
+
+
+/* Background */
+	
+	/* Plain version background */
+	body.white_version.plain_bg, .white_version.plain_bg .pageFade,
+	.white_version.plain_bg .home_page.right_content, .white_version.plain_bg .home_page.left_content
+		{
+		background: none; 
+		filter: none; 
+		background-color:#f0f0f0 !important;
+		}
+	
+	.white_version.plain_bg .contentWrapper 
+		{
+		background: none; 
+		filter: none; 
+		background-color:#e5e5e5 !important;
+		}
+		
+	.white_version .pageFade, body.plain_bg.white_version .pageFade {
+		background-color:#f0f0f0 !important; 
+		}
+	
+	/* Transparent background */
+	.white_version .contentWrapper{
+		background-color:#ffffff; 
+		background-color:rgba(255,255,255, .65); 
+		}
+
+	
+	.white_version .home_page.right_content{
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(left,  rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0.25) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.75)), color-stop(40%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.25))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.5) 40%,rgba(255,255,255,0.25) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.5) 40%,rgba(255,255,255,0.25) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.5) 40%,rgba(255,255,255,0.25) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.5) 40%,rgba(255,255,255,0.25) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#40ffffff',GradientType=1 ); /* IE6-8 */
+		}
+
+
+	.white_version .home_page.left_content{
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC43NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.75) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0.75))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.75) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.75) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.75) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.75) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', endColorstr='#bfffffff',GradientType=1 ); /* IE6-8 */
+		}
+	
+	.white_version .home_page.noborder{ 
+		border-right: none !important 
+		}	
+		
+	.white_version .home_container.mobile{
+		background-color: #ffffff;
+		background: rgba(255, 255, 255, .65);
+		}
+	
+	.white_version.plain_bg .home_container.mobile{
+		background: none ;
+		filter: none; 
+		background-color:#e1e1e1 !important;
+		}
+			
+	.white_version .mobile_header{
+		background-color: #ffffff;
+		background: rgba(255, 255, 255, .9);
+		}	
+
+
+	.white_version .mobile .home_page.left_content, .white_version .mobile .home_page.right_content {
+		background:none;
+		filter: none;
+		border-right: none;
+		border-left: none;
+		}
+		
+	.lightStyle.backGround, .whiteBackground {
+		background-color: #f1f1f1;
+		text-shadow: #ffffff 0 1px 0;
+		}
+	
+	.lightStyle.backGround_light, .lightStyle .backGround_light  {
+		background-color: #e5e5e5;
+		}
+		
+	
+	.home_page.left_content.lightStyle{ 
+		border-right: 1px solid rgba(0, 0, 0, .25);
+		-webkit-background-clip: padding-box; /* for Safari */
+   		background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */ 
+		}
+	
+	.home_right_content_border.lightStyle{ 
+		border-left: 1px solid rgba(0, 0, 0, .25);
+		-webkit-background-clip: padding-box; /* for Safari */
+   		background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */ 
+		}
+
+/* menu color */
+
+	.white_version .header_content ul li a { 
+		color: #000000 !important; text-shadow: none !important; 
+		}
+	.white_version .header_content ul li a:hover{
+		color: #f55088 !important;
+		}
+		
+	.white_version .header_content ul li{ 
+		text-shadow: none !important; 
+		}
+	
+	.white_version .header_content ul li a.active, .white_version .header_content ul li ul li a.active_sub{ color: #f55088 !important; background:none !important; }
+	
+	.white_version .header_content ul li a.active:hover, .white_version .header_content ul li ul li a.active_sub:hover { color: #f55088 !important;  background:none !important;}
+	
+	.white_version .header_content ul li a:hover{
+		text-shadow: 0px 0px 10px #f55088 !important;		
+		background:none !important;}
+	
+	.white_version .header_content ul li .stroke{ background-color:#000000; opacity:0.25; }
+	.white_version .header_content ul li .active .stroke{ background-color:#f55088; opacity:0.5; }
+		
+/* end menu color */
+
+
+/* Menu Show / Hide button */
+	.white_version .showHideMenu, .white_version .iButton{
+		background-color:#000000; 
+		background-color:rgba(0,0,0, .75); 
+		color:#ffffff;
+		text-shadow: none !important;
+		}
+	
+	.white_version .showHideMenu:hover, .white_version .iButton:hover{
+		background-color:#ffffff; 
+		background-color:rgba(255,255,255, .75); 
+		color:#000000;		
+		}
+	
+	.white_version .closeMenu{
+		color:#ffffff;
+		text-shadow: none !important;
+		}	
+	.white_version .closeMenu:hover{
+		color:#f55088;
+		}
+
+		
+	.lightStyle h1, .lightStyle h2, .lightStyle h3, 
+	.lightStyle h4, .lightStyle h5, .lightStyle h6,
+	.lightStyle p   {		
+		color: #000000;
+		}
+	
+	.lightStyle span   { color: #000000; }
+	.lightStyle .darkStyle span { 
+		color: #ffffff;
+		text-shadow: none !important;
+		}
+	
+	.lightStyle .img_place img { border: #c2c2c2 1px solid }
+	
+	.lightStyle .separator_bar, .lightStyle.separator_bar, .lightStyle .separator_medium,
+	.lightStyle.separator_medium { background-color:#d0d0d0 !important; }
+	
+	.white_version .pgScrollUp{
+		border: #000000 2px solid;
+		}
+	
+	.white_version .pgScrollUp:hover{
+		background-color : #f55088;
+		border: #f55088 2px solid
+		}	
+
+
+
+/* social bookmarks*/
+		
+	.lightStyle .font_awesome.inverse li a:hover, .lightStyle .font_awesome_2x.inverse li a:hover,
+	.lightStyle .font_awesome_3x.inverse li a:hover,
+	
+	.lightStyle .font_awesome li a, .lightStyle .font_awesome_2x li a,
+	.lightStyle .font_awesome_3x li a{
+		background-color: #e5e5e5 !important;
+		background-color:rgba(255,255,255, .75) !important;
+		}
+		
+		
+		
+	.lightStyle .font_awesome.inverse li a:hover i, .lightStyle .font_awesome_2x.inverse li a:hover i, 
+	.lightStyle .font_awesome_3x.inverse li a:hover i,
+	
+	.lightStyle .font_awesome li a i, .lightStyle .font_awesome_2x li a i, 
+	.lightStyle .font_awesome_3x li a i{ 
+		color: #333333 !important;
+		text-shadow: #ffffff 0 1px 0 !important;
+		}
+		
+		
+	.lightStyle .font_awesome.inverse li a, .lightStyle .font_awesome_2x.inverse li a,
+	.lightStyle .font_awesome_3x.inverse li a,
+	
+	.lightStyle .font_awesome li a:hover, .lightStyle .font_awesome_2x li a:hover, 
+	.lightStyle .font_awesome_3x li a:hover{
+		background-color: #333333 !important;	
+		background-color:rgba(0,0,0, .55) !important;
+		text-shadow: none !important;	
+		}
+		
+	.lightStyle .font_awesome.inverse li a i, .lightStyle .font_awesome_2x.inverse li a i, 
+	.lightStyle .font_awesome_3x.inverse li a i,
+	
+	.lightStyle .font_awesome li a:hover i, .lightStyle .font_awesome_2x li a:hover i, 
+	.lightStyle .font_awesome_3x li a:hover i{
+		color: #e5e5e5 !important;
+		text-shadow: none !important;
+		}
+
+	
+/* a tag Link */
+	
+	.lightStyle a, .lightStyle a:visited { color: #f55088; }
+	.lightStyle a:hover{ color: #000000; }	
+	
+	.lightStyle a:focus { color: #f55088; }
+	
+	.lightStyle a.normal { color: #000000; }
+	.lightStyle a.normal:hover { color: #f55088; }
+	
+	.lightStyle a .box_hover:hover, .lightStyle a .box_hover_min:hover {
+		border-color: #000000 !important;
+		color: #000000 !important;
+		}
+	
+	.lightStyle a.inverse .box_hover:hover, .lightStyle a.inverse .box_hover_min:hover {
+		border-color: #ffffff !important;
+		color: #ffffff !important;
+		text-shadow: none !important;
+		}
+	
+	.lightStyle .blog_element a{ color:#000000; }
+	.lightStyle .blog_element a:hover { color:#ff9600; }
+	
+/* Service items  */
+	
+	.lightStyle .services .description{ 
+		background-color:#ffffff; 
+		background-color:rgba(255,255,255, .4);
+		}
+		
+	.lightStyle .services .description i{	
+		color: #e5e5e5; 		
+		text-shadow: none !important;
+		
+		}
+	.lightStyle a.services:hover .description {
+		background-color: #f55088;
+		background-color: rgba(245, 80, 136, .90);
+		}
+	
+		
+	.lightStyle a.services:hover .description i{
+		color: #cccccc !important;
+		}
+	.lightStyle a.services:hover i, .lightStyle a.services:hover .description h4,
+	.lightStyle a.services:hover .description p, .lightStyle a.services:hover .description h6{
+		color: #000000 !important;
+		}
+	
+/* blockquote color */ 
+	
+	.lightStyle blockquote { color: #000000; }
+	.lightStyle blockquote cite { color:#f55088 !important; }	
+	.lightStyle blockquote { border-left: 1px solid rgba(0,0,0,0.5); }
+
+
+/* Border */
+	.lightStyle .top_border, .lightStyle.top_border{ border-top:1px solid #d0d0d0 ; }
+	
+	.lightStyle .stroke-wrapper { border: 1px solid rgba(0,0,0,0.5); }
+	.lightStyle .stroke-line {  background-color: #000000; }
+	
+	.lightStyle .imgBorder{ border: 1px solid rgba(0,0,0,0.5);   }
+	.lightStyle .imgBorder_inner{ border: 1px solid rgba(0,0,0,0.5);  }
+	
+	.lightStyle .thumbnail_list .imgBorder{ background-color:rgba(255,255,255, .25); }
+	.lightStyle .thumbnail_list .imgBorder:hover{ background-color:rgba(255,255,255, .5); }
+
+
+/* Text color */ 	
+	.lightStyle .light_color { color: #ffffff !important; text-shadow: none !important; }
+	.lightStyle .dark_color { color: #000000 !important; text-shadow: #ffffff 0 1px 0 !important; }
+
+	.lightStyle .highlight_color,
+	.lightStyle a.highlight_color { color: #f55088 !important; }	
+	.lightStyle a.highlight_color:hover { color: #000000 !important; text-shadow: #ffffff 0 1px 0 !important;}
+
+
+	
+/* Text highlight color */ 
+	.lightStyle .text_highlight{
+		background-color: #f55088;
+		background-color: rgba(245, 80, 136, .50);
+		text-shadow: none !important;
+		}
+
+	
+		
+ /* supersized gallery  */
+ 	.white_version #supersized li{ background-color: #f1f1f1; }
+	
+/*	.lightStyle .supersized-nav li a { color:#000000;  background-color:#ffffff; }
+	.lightStyle .supersized-nav li a:hover { background-color:#000000; color:#ffffff; }
+	.lightStyle .supersized-nav li a.active { background-color:#f55088; color:#000000; }
+*/
+
+
+/* Feature */
+	.lightStyle .feature .bg_hover_change{
+		background-color:#f1f1f1;
+		}
+	.lightStyle .feature .bg_hover_change i{
+		color:#f1f1f1;
+		text-shadow: none !important;
+		}
+	.lightStyle a:hover .bg_hover_change i{
+		text-shadow: none !important;
+		}
+		
+	.lightStyle a:hover .bg_hover_change{
+		background-color:#d0d0d0;
+		color:#f1f1f1 !important;
+		}
+	.lightStyle a:hover .bg_hover_change i{
+		color:#d0d0d0;
+		}	
+
+	
+/* Accordion color */ 
+		
+	.lightStyle .accordion dt .acc_heading{
+		background-color: #ffffff !important;
+		background-color: rgba(255, 255, 255, 0.5) !important;
+		}
+	
+	.lightStyle .accordion dt:hover .acc_heading{
+		background-color: #ffffff !important;
+		background-color: rgba(255, 255, 255, 1) !important;
+		}
+
+
+
+/* Graph bar background color */
+	.lightStyle .graph_container li {
+		background-color:#000000; 
+		background-color:rgba(0,0,0, .25); 
+		}
+
+/* Graph bar color */
+	.lightStyle .graph_container li a { 
+		background-color: #f55088;
+		}
+		
+/* Graph bar color */
+	.lightStyle .graph_container li span.graph_item { color: #222222; }
+	
+	.lightStyle .graph_container li span.graph_value span { color: #ffffff; }	
+	.lightStyle .graph_container li span.graph_value i{ color: #000000; }
+	.lightStyle .graph_container li span.graph_value { background-color: #000000;  }
+
+
+	.lightBgCaption{
+		color: #000000 !important;
+		background-color: #ffffff;
+		background-color: rgba(255, 255, 255, 0.75);
+		zoom: 1;	
+		}
+
+	.lightStyle .bgCaption {
+		background-color: #ffffff;
+		background-color: rgba(255, 255, 255, 0.75);
+		zoom: 1;	
+		}
+	
+	.lightStyle .bgCaption h1, .lightStyle .bgCaption h2, .lightStyle .bgCaption h3,
+	.lightStyle .bgCaption h4, .lightStyle .bgCaption h5, .lightStyle .bgCaption h6,
+	.lightStyle .bgCaption p, .lightStyle .bgCaption span{
+		text-shadow: #ffffff 0 1px 0 !important;
+		}
+		
+/* Tab color */
+
+		
+	.lightStyle ul.nav-tabs.plainTab > li > a{	
+		color: #f1f1f1 !important;
+		}
+		
+	.lightStyle ul.nav-tabs.plainTab,
+	.lightStyle ul.nav-tabs.plainTab > .active > a,
+	.lightStyle ul.nav-tabs.plainTab > .active > a:hover,
+	.lightStyle ul.nav-tabs.plainTab > .active > a:focus {
+		color: #f55088 !important;
+		border:none !important;		
+		background: none !important;		
+		}	
+	
+	.lightStyle ul.nav-tabs.plainTab > li > a:hover {	color: #777777 !important; }
+
+	.lightStyle .nav-tabs {
+		border-bottom: 1px solid rgba(0, 0, 0, .4);		
+		}
+	
+	.lightStyle .nav-tabs > li > a,
+	.lightStyle .nav-tabs > li > a {
+		border:none !important;	
+		}
+		
+	.lightStyle .nav-tabs > .active > a,
+	.lightStyle .nav-tabs > .active > a:hover,
+	.lightStyle .nav-tabs > .active > a:focus {
+		color: #f1f1f1;
+		border:none !important;	
+	 	background-color:#000000 !important; 
+		background-color:rgba(0,0,0, .65) !important; 		
+		 
+		}
+		
+	
+	.lightStyle .nav-tabs > li > a:hover,
+	.lightStyle .nav-tabs > li > a:focus {
+		color: #000000;
+		border:none !important;	
+		background-color:transparent !important;
+		}
+
+	.lightStyle .nav-pills > .active > a,
+	.lightStyle .nav-pills > .active > a:hover,
+	.lightStyle .nav-pills > .active > a:focus {
+		color: #111111;
+		text-shadow: none !important;
+	  	border:none !important;	
+	 	background-color: #cccccc !important;
+		}
+
+/* Text hover color */ 
+			
+	.lightStyle a.list_hover, .lightStyle a.list_hover i{
+		color: #000000 !important;
+		}
+		
+	.lightStyle a:hover.text_hover, .lightStyle a:hover.list_hover {
+		color: #000000 !important;
+		background-color: #bbbbbb;
+		}
+			
+	.lightStyle a.hover_alt {
+		color: #f1f1f1 !important;
+		text-shadow: none !important;
+		}
+		
+	.lightStyle a:hover.hover_alt {
+		color: #111111 !important;
+		text-shadow: none !important;
+		}
+		
+		
+		
+/* Table hover color */ 
+	.lightStyle .table-hover tbody tr:hover > td,
+	.lightStyle .table-hover tbody tr:hover > th {
+		background-color: #ffffff !important;
+		background-color: rgba(255, 255, 255, 0.5) !important;
+		}		
+	.lightStyle .table th,
+	.lightStyle .table td {
+		border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+		}
+
+
+/* Form object style */		
+	.lightStyle input[type="text"],
+	.lightStyle input[type="password"],
+	.lightStyle input[type="email"],
+	.lightStyle input[type="url"],
+	.lightStyle textarea{
+		color: #000000;
+		border:none;
+		background-color: #e5e5e5;
+		}
+	
+	.lightStyle .transparent input[type="text"],
+	.lightStyle .transparent input[type="password"],
+	.lightStyle .transparent input[type="email"],
+	.lightStyle .transparent input[type="url"],
+	.lightStyle .transparent textarea {
+		background: rgba(255, 255, 255, .65) !important;
+		}	
+		
+	.lightStyle .label {color: #f1f1f1 !important; text-shadow: none !important; }
+	
+	
+/* Button color */
+
+	
+	.lightStyle a.button, .lightStyle .button, .lightStyle button, 
+	.lightStyle a.button.inverse:hover, .lightStyle .button.inverse:hover,
+	.lightStyle button.inverse:hover {
+		color: #222222;
+		background-color: #d5d5d5;
+		}
+	
+	.lightStyle a.button:hover, .lightStyle .button:hover, .lightStyle button:hover, 
+	.lightStyle a.button.inverse, .lightStyle .button.inverse,
+	.lightStyle button.inverse {
+		color: #f1f1f1;
+		text-shadow: none !important;
+		background-color: #222222;
+		}
+
+	.lightStyle .button.transparent,
+	.lightStyle .button.inverse.transparent:hover {
+		background-color: rgba(255, 255, 255, .65) !important;
+		}
+	
+	.lightStyle .button.transparent:hover,
+	.lightStyle .button.inverse.transparent {
+		background-color: rgba(0, 0, 0, .25) !important;
+		}
+
+
+/* Join us email input field */	
+
+	.lightStyle #joinus_email 
+		{
+		color: #000000;
+		}
+ 
