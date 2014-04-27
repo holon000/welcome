@@ -21,7 +21,7 @@ module.exports = {
       minLength: 6
     }
 
-  }
+  },
 
   beforeCreate: function (attrs, next) {
     var bcrypt = require('bcrypt');

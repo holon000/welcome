@@ -16,7 +16,7 @@ module.exports.adapters = {
 
   // if you leave the adapter config unspecified
   // in a model definition, 'default' will be used.
-  'default': 'memory',
+  'default': 'disk',
 
   // in-memory adapter for development only
   memory: {

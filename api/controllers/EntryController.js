@@ -36,7 +36,7 @@ module.exports = {
       model: 'User'
     }
 
-  }
+  },
 
   /**
    * Overrides for the settings in `config/controllers.js`
