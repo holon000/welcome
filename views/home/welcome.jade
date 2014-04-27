@@ -155,7 +155,7 @@ block body
             p.half_width
               | We specialized in advanced web services including website design,
               br
-              | website development as well as software & app development.
+              | website development as well as software &amp; app development.
               br
               | we have a team of best web designers and developers
         hr.separator_mini
@@ -233,9 +233,7 @@ block body
               hr.separator_mini
               .row-fluid
                 .span6
-                  a.services.right.magnificPopup(data-title='data-title')
-                    span.upperCase.bold_weight ANP software development
-                    | '  href="images/portfolio/image1.jpg" target="_self"
+                  a.services.right.magnificPopup(data-title='<span class="upperCase bold_weight">ANP software development</span>', href="images/portfolio/image1.jpg", target="_self")
                     .description
                       h5.upperCase Software Development
                       p Create nibh euismod tincidunt ut euismod tincidunt.
@@ -243,9 +241,7 @@ block body
                       img(src='images/service_img1.png', alt='image01')
                   hr.separator
                 .span6
-                  a.services.magnificPopup(data-title='data-title')
-                    span.upperCase.bold_weight Display Popup image
-                    | '  href="images/portfolio/image2.jpg" target="_self"
+                  a.services.magnificPopup(data-title='<span class="upperCase bold_weight">Display Popup image</span>', href="images/portfolio/image2.jpg", target="_self")
                     span.service_icon
                       img(src='images/service_img2.png', alt='image02')
                     .description
@@ -264,7 +260,7 @@ block body
                 .span6
                   a.services.magnificPopup-video(title='Load YouTube and Vimeo video', href='http://www.youtube.com/watch?v=9wlFSR3flbk', target='_self')
                     .description
-                      h5.upperCase Media & Film
+                      h5.upperCase Media &amp; Film
                       p Create nibh euismod tincidunt ut euismod tincidunt.
                     span.service_icon
                       img(src='images/service_img4.png', alt='image04')
@@ -290,13 +286,13 @@ block body
                           i.fa.fa-caret-down
                       li(data-level='90%')
                         a
-                        span.graph_item Branding & Identity
+                        span.graph_item Branding &amp; Identity
                         span.graph_value
                           span
                           i.fa.fa-caret-down
                       li(data-level='85%')
                         a
-                        span.graph_item Media & Film
+                        span.graph_item Media &amp; Film
                         span.graph_value
                           span
                           i.fa.fa-caret-down
@@ -432,15 +428,15 @@ block body
         .container-fluid.lightStyle.desktop_alignLeft
           .row-fluid
             .span12
-              //
-                 Google map position is defined in custom.min.js file near the // Google map Code // comment line
-                                        the google.maps.LatLng variable is used to set the location of the map
-              #map_canvas
-                //
-                   Google map load error message
-                a.openGoogleMap
-                  i.fa.fa-map-marker.fa-1x
-                  strong Click to see Map Location
+              //- //
+              //-    Google map position is defined in custom.min.js file near the // Google map Code // comment line
+              //-                           the google.maps.LatLng variable is used to set the location of the map
+              //- #map_canvas
+              //-   //
+              //-      Google map load error message
+              //-   a.openGoogleMap
+              //-     i.fa.fa-map-marker.fa-1x
+              //-     strong Click to see Map Location
           .row-fluid
             .span5
               h5.upperCase.bold_weight  Office Address:
