@@ -1,9 +1,9 @@
 
-/* Twitter initilize */
-$(function () {
-        // start jqtweet!
-        JQTWEET.loadTweets();
-    });
+// /* Twitter initilize */
+// $(function () {
+//         // start jqtweet!
+//         JQTWEET.loadTweets();
+//     });
 
 
 
