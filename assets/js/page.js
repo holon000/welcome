@@ -1,5 +1,5 @@
 
-// /* Twitter initilize */
+/* Twitter initilize */
 // $(function () {
 //         // start jqtweet!
 //         JQTWEET.loadTweets();

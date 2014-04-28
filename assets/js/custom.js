@@ -1,18 +1,18 @@
 /*!
 
 	Straightway - Coming soon unique creative Page
- 	Copyright (c) 2014, Subramanian 
+ 	Copyright (c) 2014, Subramanian
 
 	Author: Subramanian
     Profile: themeforest.net/user/FMedia/
-	
+
     Version: 1.0.0
 	Release Date: February 2014
-	
-*/	
+
+*/
 
 
-		
+
 /* Define required varaibles */
 	var isMobile = $(window).width() <= 767;
 	var mobileDevice = screen.width < 1024 && screen.height < 1024;
@@ -30,61 +30,61 @@
 	var pageAlignCenter =  false;
 	var onePageVersion =  false;
 	var browserWebkit;
-	
+
 	/* set the Final date in YYYY/MM/DD HH:SEC:MIN formate  */
-	var countdown_value = '2014/10/18 00:00:00 ';
+	var countdown_value = '2014/5/15 00:00:00 ';
 	var countdown_finish = 'countdown finished';
-	
-	
+
+
 	/* set top Menu height - to fix the browser bug */
 	var topMenuHeight = 60;
 	/* Enable/disable Menuauto Hide */
 	var menuAutoHide = true;
-	
+
 	var agent;
 	var ipadDevice;
 	var iPhoneDevice;
 	var iVersion;
 	var retinaDevice;
-	
-	
-	/* preload images are defined here */	
+
+
+	/* preload images are defined here */
 	var preLoadImgs = [];
-	
+
 	$(document).ready(function(){
-		
+
 		/* Site Main plug-in initilize */
 		jQuery(function($){
 			$("body").mainFm();
-		});	
-			
+		});
+
 		retinaDevice = window.devicePixelRatio !== undefined &&  window.devicePixelRatio > 1 ? true : false;
-		
+
 		// Find ipad device
 		agent = (window.navigator.userAgent).toLowerCase();
 		ipadDevice = agent.indexOf("ipad") > -1;
 		iPhoneDevice = agent.indexOf("iphone") > -1;
 		iVersion = agent.slice(agent.indexOf("version/")+8,agent.indexOf("version/")+11);
-		
+
 		/* Find touch device */
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		  isTouch = true;	
+		  isTouch = true;
 		}
 
 		var iimg = !retinaDevice ? "images/supersized/pause.png" : "images/supersized/pause@2x.png";
 		$("#pauseplay").attr("src",iimg);
-		
+
 		if(isTouch){
 			$("html, body").css({"overflow-y":"auto"});
 		}
-		
+
 		browserWebkit = $.browser.webkit;
-			
+
 	});
 
 
 
-				
+
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-borderimage-borderradius-boxshadow-hsla-opacity-rgba-cssanimations-generatedcontent-csstransforms-csstransforms3d-csstransitions-shiv-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-load
  */
@@ -137,25 +137,25 @@
 
 
 
-	
+
 /* Tabs, magnificPopup image and Accordion code */
 
 
-$(document).ready(function(){		
-		
+$(document).ready(function(){
+
 
 /* Fit Text plugin Initialization */
-	
+
 	$(".fittext1").fitText();
 	$(".fittext2").fitText(1.2);
 	$(".fittext3").fitText(1.1, { minFontSize: '40px', maxFontSize: '75px' });
-	
+
 // FitVids Initialization
 	try {  $(".container").fitVids(); } catch (e) { }
 	try {  $(".container-fluid").fitVids(); } catch (e) { }
-		
-		
-/* magnificPopup plugin Initialization */	
+
+
+/* magnificPopup plugin Initialization */
 
 	$('.magnificPopup').each(function(){
 		var mc = $(this);
@@ -164,12 +164,12 @@ $(document).ready(function(){
 			  src: mc.attr("href"),
 			  title: mc.attr("data-title") !== undefined ? mc.attr("data-title") : mc.attr("title"),
 			  type:'image'
-		  },					
+		  },
 		  mainClass: 'mfp-with-zoom',
 		  removalDelay: 300
 		 });
-	  });	
-	  
+	  });
+
 	  $('.magnificPopup-video').each(function(){
 		var mc = $(this);
 		mc.magnificPopup({
@@ -177,84 +177,84 @@ $(document).ready(function(){
 			  src: mc.attr("href"),
 			  title: mc.attr("data-title") !== undefined ? mc.attr("data-title") : mc.attr("title"),
 			  type:'iframe'
-		  },					
+		  },
 		  mainClass: 'mfp-with-zoom',
 		  removalDelay: 300
 		 });
-	  }); 	
-		  
-		
+	  });
 
-		
+
+
+
 	  if($.browser.msie && parseInt($.browser.version, 10) <= 8 || isTouch){
 		  $(".frame_slideshow .slides, .frame_slideshow li").css({ "height": "auto" });
 		  $(".frame_slideshow").removeClass("frame_slideshow");
 		  $(".comment .comment-area, .comment .comment-aut").css({ "width": "600px" });
 		  $(".comment .children .comment-area, .comment .children .comment-aut").css({ "width": "530px" });
 	  };
-	  
+
 	  if($.browser.msie){
-		  $('.porImgOver').find(".imageText").css({"visibility":"hidden"});		  
+		  $('.porImgOver').find(".imageText").css({"visibility":"hidden"});
 		  $('.porImgOver').hover(function(){
 			  $(this).find(".imageText").css({"visibility":"visible"});
 		  },function(){
 			  $(this).find(".imageText").css({"visibility":"hidden"});
 		  });
 	  };
-	  
-	  var proEventType = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click';	
-	  
-	  if(proEventType === "touchstart"){		  
+
+	  var proEventType = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click';
+
+	  if(proEventType === "touchstart"){
 		  $(".porImgOver .imageText").hide();
-		  $(".porImgOver").addClass("hover_state");	
-		  
+		  $(".porImgOver").addClass("hover_state");
+
 		 $(".porImgOver").bind("click", function(event) {
 			 $(".porImgOver").find(".imageText").hide();
 			 $(this).find(".imageText").show();
-		 });	 
+		 });
 	  }else{
 		  $(".porImgOver").addClass("hover_state");
 	  }
-		
-		
+
+
 	  $('body').find('ul.tabs > li > a').each( function(){
 		   $($(this).attr('href')).data("vidd",  $($(this).attr('href')).find('.tabVideo .addVideo') );
 	  });
-	  
+
 	  $('body').on('click', 'ul.tabs > li > a', function(e) {
-		  
+
 		  //Get Location of tab's content
 		  var contentLocation = $(this).attr('href');
 		  //Let go if not a hashed one
 		  if(contentLocation.charAt(0)=="#") {
-		  
+
 			  e.preventDefault();
-		  
+
 			  //Make Tab Active
 			  $(this).parent().siblings().children('a').removeClass('active');
 			  $(this).addClass('active');
-		  
+
 			  //Show Tab Content & add active class
 			  $(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
 			  $(contentLocation).css({"opacity":"0"}).animate({"opacity":1},900);
-			  
+
 			  $('body').find('ul.tabs > li > a').each( function(){
 				  $($(this).attr('href')).find('.tabVideo .addVideo').remove();
 			  });
 
 			  $(contentLocation).find('.tabVideo').append($(contentLocation).data("vidd"))
-			  
+
 			  $("body").mainFm('scroll_update');
-				  
+
 			  $(contentLocation).find('.graph_container').each(function() {
 				  $("body").mainFm('graph_display',$(this));
 			  });
 		   }
 		});
-		
-	
+
+
 		// Graph
-		
+
 		$("body").find('.contentWrapper').each(function(){
 			$(this).find('.graph_container').each(function(){
 				$(this).find('li').each(function() {
@@ -267,42 +267,42 @@ $(document).ready(function(){
 			});
 
 		});
-		
-		
+
+
 // Accordion
-		
-	setTimeout(function(){ 
-		
+
+	setTimeout(function(){
+
 		jQuery(function($){
 		  $('.accordion > dt > a').prepend('<span class="closeOpen" ></span>');
 			//$('.accordion').attr("data-autoHide");
-				 
+
 			$('.accordion').each( function(){
-				
+
 				var allDt = $(this);
 				var allPanels = allDt.find(' > dd').hide();
 				allDt.find(' dt .closeOpen').css({"background-position":"0px 0px"});
-				 
+
 				if($(this).attr("data-openFirstElement") === "true"){
 				  $(this).children(":first-child").find(".closeOpen").css({"background-position":"0px -15px"});
 				  $(this).children(":first-child").find("a").data('show',true);
 				  $target =  $(this).children(":first-child").next();
 				  $target.addClass('active').slideDown();
 				}
-				
-				
+
+
 				$(this).find(' > dt > a').click(function() {
 					$this = $(this);
-					$target =  $this.parent().next();					
-					
-					$("body").mainFm('intVideoObject', $this);				
+					$target =  $this.parent().next();
+
+					$("body").mainFm('intVideoObject', $this);
 					$("body").find('.tabVideo').each(function(){
 						$(this).find('.vid').remove();
 						$(this).find('img').show();
 						$(this).find('.video_hover').show().css({"z-index":"5"});
 					});
-					
-					
+
+
 					if($(this).parent().parent().attr("data-autoHide") !== "false"){
 						allDt.find(' dt .closeOpen').css({"background-position":"0px 0px"});
 						$this.find(".closeOpen").css({"background-position":"0px -15px"});
@@ -311,8 +311,8 @@ $(document).ready(function(){
 							allPanels.removeClass('active').slideUp();
 							$target.addClass('active').slideDown();
 						}
-					}else{	
-						
+					}else{
+
 						if($this.data('show')){
 							$this.data('show',false);
 							$this.find('.closeOpen').css({"background-position":"0px 0px"});
@@ -320,18 +320,18 @@ $(document).ready(function(){
 						}else{
 							$this.data('show',true);
 							$this.find(".closeOpen").css({"background-position":"0px -15px"});
-							$target.addClass('active').slideDown();							
+							$target.addClass('active').slideDown();
 						}
-						
+
 					}
-					
+
 					setTimeout(function(){ $("body").mainFm('scroll_update'); },500);
-					
+
 					return false;
 				});
 			});
-		}); 
-	
+		});
+
 		jQuery(function($){
 		  var allPanels = $('.accordion_autoHide > dd').hide();
 		  $('.accordion_autoHide > dt > a').prepend('<span class="closeOpen" ></span>');
@@ -349,22 +349,22 @@ $(document).ready(function(){
 			return false;
 		  });
 		});
-	
-	
-	
-	
+
+
+
+
 // Accordion Blog
-		
+
 		jQuery(function($){
           $('.accordion_blog > dt > a').prepend('<span class="closeOpen" ></span>');
 			//$('.accordion_blog').attr("data-autoHide");
-				 
+
 			$('.accordion_blog').each( function(){
-				
+
 				var allDt = $(this);
 				var allPanels = allDt.find(' > dd').hide();
 				allDt.find(' dt .closeOpen').css({"background-position":"0px 0px"});
-				 
+
 				if($(this).attr("data-openFirstElement") === "true"){
                   $(this).children(":first-child").find(".closeOpen").css({"background-position":"0px -25px"});
                   $(this).children(":first-child").find("a").data('show',true);
@@ -374,33 +374,33 @@ $(document).ready(function(){
 				  $target.find("a.lazyload").each(function(){
 						$("body").mainFm('lazyLoadInt', $(this));
 					});
-					
+
 					$target.find("a.lazyload_single").each(function(){
 						$("body").mainFm('lazyLoadInt', $(this));
 					});
 				}
-				
-				
+
+
 				$(this).find(' > dt > a').click(function() {
 					$this = $(this);
-					$target =  $this.parent().next();					
-					
-					$("body").mainFm('intVideoObject', $this);				
+					$target =  $this.parent().next();
+
+					$("body").mainFm('intVideoObject', $this);
 					$("body").find('.tabVideo').each(function(){
 						$(this).find('.vid').remove();
 						$(this).find('img').show();
 						$(this).find('.video_hover').show().css({"z-index":"5"});
 					});
-					
+
 					$target.find("a.lazyload").each(function(){
 						$("body").mainFm('lazyLoadInt', $(this));
 					});
-					
+
 					$target.find("a.lazyload_single").each(function(){
 						$("body").mainFm('lazyLoadInt', $(this));
 					});
-					
-					
+
+
 					if($(this).parent().parent().attr("data-autoHide") !== "false"){
 						allDt.find(' dt .closeOpen').css({"background-position":"0px 0px"});
 						$this.find(".closeOpen").css({"background-position":"0px -28px"});
@@ -412,8 +412,8 @@ $(document).ready(function(){
 							$this.find(".closeOpen").css({"background-position":"0px 0px"});
 							allPanels.removeClass('active').slideUp();
 						}
-					}else{	
-						
+					}else{
+
 						if($this.data('show')){
 							$this.data('show',false);
 							$this.find('.closeOpen').css({"background-position":"0px 0px"});
@@ -421,59 +421,59 @@ $(document).ready(function(){
 						}else{
 							$this.data('show',true);
 							$this.find(".closeOpen").css({"background-position":"0px -28px"});
-							$target.addClass('active').slideDown();							
+							$target.addClass('active').slideDown();
 						}
-						
+
 					}
-					
+
 					setTimeout(function(){ $("body").mainFm('scroll_update'); },500);
-					
+
 					return false;
 				});
             });
-		});		
-		
+		});
+
 	}, 700);
-		 
+
 
 	});
-				
+
 
 /* Embed Video player */
 
 (function($) {
 	$.fn.embedPlayer = function(url, width, height, autoplay) {
-		
+
 		var $output = '';
 		var youtubeUrl = url.match(/watch\?v=([a-zA-Z0-9\-_]+)/);
 		var vimeoUrl = url.match(/^http:\/\/(www\.)?vimeo\.com\/(clip\:)?(\d+).*$/);
 		var aPlay =  autoplay == "true" ||  autoplay ? true : false;
-		
+
 		if (youtubeUrl) {
 			var url_ = 'http://www.youtube.com/embed/' + youtubeUrl[1] + '?html5=1;rel=0;autohide=1';
-			if (aPlay) { 
-				url_ += '&autoplay=1'; 
+			if (aPlay) {
+				url_ += '&autoplay=1';
 			}else{
 				url_ += '&autoplay=0';
 			}
 			$output = $('<iframe style="width: ' + width + '; height: ' + height + ';" src="' + url_ +'&wmode=transparent'+ '" wmode="Opaque" frameborder="0" allowfullscreen ></iframe>');
-			
-			
+
+
 		} else if (vimeoUrl) {
-			
+
 			var url_ = 'http://player.vimeo.com/video/' + vimeoUrl[3] + '?title=0&byline=0&portrait=0';
-			if (aPlay) { 
+			if (aPlay) {
 				url_ += '&autoplay=1';
 			}else{
 				url_ += '&autoplay=0';
 			}
 			$output = $('<iframe style="width: ' + width + '; height: ' + height + ';" src="' + url_ +'&wmode=transparent'+ '"  wmode="Opaque" frameborder="0" ></iframe>');
-			
+
 		} else {
-			
+
 			$output = $('<p>no video url found - vimeo and youtube supported</p>');
 		}
-		
+
 		return this.html($output);
 	};
 })(jQuery);
@@ -493,16 +493,16 @@ var wHig_ = $(window).height();
 var pointerVerPos = wHig_ > 360 ? wHig_/2 - 180 :  wHig_/2 - 75;
 
 function map_initialize() {
-  "use strict";  
-  
+  "use strict";
+
 	var map;
 	var openedInfoWindow = null;
-	
+
 	mapPos = new google.maps.LatLng(34.05223, -118.24368);
 	latlng = mapPos;
 
 	var MY_MAPTYPE_ID = 'custom_style';
-  
+
   	  var featureOpts = [
     {
       stylers: [
@@ -523,29 +523,29 @@ function map_initialize() {
       ]
     }
   ];
-  
-  
-  
+
+
+
  var styledMapOptions = {
 
 	  name: 'Custom Style'
   };
 
   var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-  
-  
-  
+
+
+
   var companyPos = mapPos;
   var settings = {
 	  zoom: 15,
 	  center: latlng,
 	  mapTypeControl: true,
-	  
+
 	  navigationControl: true,
 	  navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
 	  mapTypeId: MY_MAPTYPE_ID};
-		
-	var map = new google.maps.Map(document.getElementById("map_canvas"), settings);	
+
+	var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
 
   	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 
@@ -558,13 +558,13 @@ function map_initialize() {
 			aPoint.x = aPoint.x+offsetX;
 			aPoint.y = aPoint.y+offsetY;
 			map.panTo(proj.fromContainerPixelToLatLng(aPoint));
-		}; 
-		ov.draw = function() {}; 
-		ov.setMap(this); 
+		};
+		ov.draw = function() {};
+		ov.setMap(this);
 	};
-	
+
 	map.panToWithOffset(latlng, 0, pointerVerPos);
-	 
+
 	var contentString = '<div id="content">'+
 		'<div id="siteNotice">'+
 		'</div>'+
@@ -576,7 +576,7 @@ function map_initialize() {
 	var infowindow = new google.maps.InfoWindow({
 		content: contentString
 	});
-	
+
 	var companyImage = new google.maps.MarkerImage('images/map/logo.png',
 		new google.maps.Size(100,50),
 		new google.maps.Point(0,0),
@@ -597,35 +597,35 @@ function map_initialize() {
 		shadow: companyShadow,
 		title:"Høgenhaug",
 		zIndex: 3});
-	
+
 	gMapStore = map;
-	
+
 	google.maps.event.addListener(companyMarker, 'click', function() {
 		if (openedInfoWindow != null) openedInfoWindow.close();  // <-- changed this
-		infowindow.open(map,companyMarker);	
+		infowindow.open(map,companyMarker);
 		openedInfoWindow = infowindow;
       	google.maps.event.addListener(infowindow, 'closeclick', function() {
 		   map.panToWithOffset(latlng, 0, pointerVerPos);
-		});	
+		});
 	});
-	
+
 	var mapInterval;
-	$(window).resize(function() {	
+	$(window).resize(function() {
 		clearInterval(mapInterval);
 		mapInterval = setInterval(function(){
-			clearInterval(mapInterval); 
+			clearInterval(mapInterval);
 			wHig_ = $(window).height();
 			mapResizer();
 		},700);
 	});
-	
+
 }
 
 function mapResizer(){
 	pointerVerPos = 0;
 	//var winW =   $(window).width() > 1024 ? "100%" : $(window).width();
 	try{
-		//$("#map_canvas").css({"width": winW });	
+		//$("#map_canvas").css({"width": winW });
 	gMapStore.panToWithOffset(latlng, 0, pointerVerPos);
 	} catch (e) { }
 }
@@ -663,7 +663,7 @@ f.length;a;)this.addEventListener(f[--a],g,false);else this.onmousewheel=g},tear
  * Thanks to: Seamus Leahy for adding deltaX and deltaY
  *
  * Version: 3.0.6
- * 
+ *
  * Requires: 1.2.2+
  */
 
@@ -687,7 +687,7 @@ $.event.special.mousewheel = {
             this.onmousewheel = handler;
         }
     },
-    
+
     teardown: function() {
         if ( this.removeEventListener ) {
             for ( var i=types.length; i; ) {
@@ -703,7 +703,7 @@ $.fn.extend({
     mousewheel: function(fn) {
         return fn ? this.bind("mousewheel", fn) : this.trigger("mousewheel");
     },
-    
+
     unmousewheel: function(fn) {
         return this.unbind("mousewheel", fn);
     }
@@ -714,33 +714,33 @@ function handler(event) {
     var orgEvent = event || window.event, args = [].slice.call( arguments, 1 ), delta = 0, returnValue = true, deltaX = 0, deltaY = 0;
     event = $.event.fix(orgEvent);
     event.type = "mousewheel";
-    
+
     // Old school scrollwheel delta
     if ( orgEvent.wheelDelta ) { delta = orgEvent.wheelDelta/120; }
     if ( orgEvent.detail     ) { delta = -orgEvent.detail/3; }
-    
+
     // New school multidimensional scroll (touchpads) deltas
     deltaY = delta;
-    
+
     // Gecko
     if ( orgEvent.axis !== undefined && orgEvent.axis === orgEvent.HORIZONTAL_AXIS ) {
         deltaY = 0;
         deltaX = -1*delta;
     }
-    
+
     // Webkit
     if ( orgEvent.wheelDeltaY !== undefined ) { deltaY = orgEvent.wheelDeltaY/120; }
     if ( orgEvent.wheelDeltaX !== undefined ) { deltaX = -1*orgEvent.wheelDeltaX/120; }
-    
+
     // Add event and delta to the front of the arguments
     args.unshift(event, delta, deltaX, deltaY);
-    
+
     return ($.event.dispatch || $.event.handle).apply(this, args);
 }
 
-})(jQuery);   
-	
-		
+})(jQuery);
+
+
 
 
 /*
@@ -892,7 +892,7 @@ jQuery.extend( jQuery.easing,
 		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
 	},
 	easeInOutBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158; 
+		if (s == undefined) s = 1.70158;
 		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
 		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
 	},

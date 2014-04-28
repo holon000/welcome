@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    title Welcome to Ethereum
+    title Welcome
     meta(name="description", content="")
     meta(name="author", content="")
     meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
@@ -10,21 +10,14 @@ html
     //if lt IE 9
       script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
 
+    link(rel="icon",type="image/png",href="images/favicon.png")
     link(rel="shortcut icon", href="images/favicon.ico")
     link(rel="apple-touch-icon", href="images/apple-touch-icon.png")
     link(rel="apple-touch-icon", sizes="72x72" href="images/apple-touch-icon-72x72.png")
     link(rel="apple-touch-icon", sizes="114x114" href="images/apple-touch-icon-114x114.png")
 
     block styles
-  body.white_version.plain_bg
-    block body
-
     block scripts
-    //-
-      // Bring in the socket.io client
-      script(type="text/javascript", src="/js/socket.io.js")
-      // then beef it up with some convenience logic for talking to Sails.js'
-      script(type="text/javascript", src="/js/sails.io.js")
-      // listen on socket.io for incoming messages
-      script(type="text/javascript", src="/js/app.js")
 
+body.white_version.plain_bg
+  block content
