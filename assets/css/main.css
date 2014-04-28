@@ -39,7 +39,7 @@
 		position: absolute;
 		right: 25px;
 		top:55px;
-		height:170px !important;
+		height:130px !important;
 
 		padding: 10px;
 
@@ -54,7 +54,7 @@
 	.single_page .logo{ position:relative; right:auto; left:0px; top:5px; }
 
 	.logo.center_position{
-		right:-105px;
+		right:-75px;
 		}
 
 		.mobile_header{
@@ -81,7 +81,7 @@
 			right:0px;
 			max-height: 100%;
 			margin-left:0px;
-			width:190px;
+			width:130px;
 			z-index:55;
 
 			webkit-transition: all 0.2s ease-in-out;

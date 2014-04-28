@@ -986,10 +986,10 @@ pre {
 
 code {
   padding: 2px 4px;
-  /*color: #d14;*/
+  color: #FFF;
   white-space: nowrap;
-  background-color: #e5e5e5;
-  border: 1px solid #e1e1e8;
+  /*background-color: rgba(255, 255, 238, .5) !important;*/
+  border: none !important;
 }
 
 pre {

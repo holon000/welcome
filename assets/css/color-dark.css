@@ -585,6 +585,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 		font-weight:bold !important;
 		}
 
+code, pre {
+	color: #ffffff;
+	background-color: #000000;
+}
 /* Form object style */
 	input[type="text"],
 	input[type="password"],
