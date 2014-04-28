@@ -32,7 +32,7 @@
 	var browserWebkit;
 
 	/* set the Final date in YYYY/MM/DD HH:SEC:MIN formate  */
-	var countdown_value = '2014/5/15 00:00:00 ';
+	var countdown_value = '2014/5/15 08:00:00 ';
 	var countdown_finish = 'countdown finished';
 
 
