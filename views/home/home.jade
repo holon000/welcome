@@ -1,0 +1,71 @@
+.home_container
+  .home_page.left_content.darkStyle
+    .logo_holder(data-displaytime='0')
+      .logo.center_position
+        // <a href="!home">
+        img.logo_normal(src='images/logo.png', data-retina='yes', alt='ethereum')
+        // </a>
+    .container-fluid.left_Holder
+      hr.top_space
+      .row-fluid
+        .span12(data-displaytime='3')
+          h1.upperCase Welcome
+      #clock.row-fluid(data-displaytime='6')
+        .span12.counter_time.countdown
+          span.font_medium.time_days.first 000
+          span.font_small  days
+          span.font_medium.time_hours 00
+          span.font_small  hours
+          span.font_medium.time_minutes 00
+          span.font_small  mins
+          span.font_medium.time_seconds 00
+          span.font_small  secs
+      hr.separator_mini
+      .row-fluid
+        .span12(data-displaytime='9')
+          span.font_medium_x.t2_space until Bitcoin 2014, Amsterdam
+        hr
+      hr.separator_mini
+      .row-fluid.animate(data-displaytime='12')
+        .span12
+          .join_form
+            form(name='joinus', method='post')
+              input#joinus_email(type='text', value='LOGIN', name='joinus_email', onfocus='if(this.value == "LOGIN") {this.value = "";}', onblur='if (this.value == "") {this.value = "LOGIN";}')
+              button#joinus_submit.darkStyle(type='submit')
+                i.fa.fa-plus-circle.fa-2x
+          #reply_joinus_message
+      hr.separator_mini
+  .home_page.right_content.darkStyle
+    .container-fluid.right_Holder
+      hr.top_space
+      a.page_close
+      .row-fluid(data-displaytime='20')
+        .span12
+          h4.t_space We're excited to have you as part the team!
+      .row-fluid(data-displaytime='20')
+        .span12
+          .t3_space
+            h5
+              | We created this welcome site as a one-stop-shop for all employee needs. Have a look around :)
+      .row-fluid
+        .span12.menu_holder
+          .header
+            .header_content
+              ul.nav
+                li(data-displaytime='30')
+                  a(href='!setup')
+                    span.stroke
+                    | Quick Start
+                li(data-displaytime='33')
+                  a(href='!services')
+                    span.stroke
+                    | Service Status
+                li(data-displaytime='36')
+                  a(href='!connect')
+                    span.stroke
+                    | Connect with us
+                li(data-displaytime='39')
+                  a.last(href='!notices')
+                    span.stroke
+                    | Bulletins
+      hr.separator_mini
