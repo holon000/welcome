@@ -1,4 +1,4 @@
-extends ../sitetemplate
+extends sitetemplate
 
 block styles
   link(href="http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet" type="text/css")
@@ -45,15 +45,15 @@ block content
         i.fa.fa-bars
       .menu_holder
   //- include theme.html
-  include home
+  include welcome/home
   // pgScrollUp navigation used to scroll the page to top position
   .pgScrollUp
   // Complete web site content is placed inside the bodyContainer class div
   .bodyContainer
     a.page_close
-    include setup
-    include services
-    include connect
-    include notices
-    include security
+    include welcome/setup
+    include welcome/services
+    include welcome/connect
+    include welcome/notices
+    include welcome/security
 
