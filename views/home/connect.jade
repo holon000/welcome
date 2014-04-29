@@ -1,0 +1,75 @@
+.contentWrapper.contactPage(data-id='!connect')
+  .m-Scrollbar
+    hr.alignToMiddle
+    .container-fluid
+      .row-fluid
+        .span12
+          .heading_stroke
+            .heading_stroke_wrapper
+              .stroke-text
+                h2 Contact Us
+              .stroke-holder
+                .stroke-line
+    .container-fluid.desktop_alignLeft
+      .row-fluid
+        .span12
+          //
+             Google map position is defined in custom.min.js file near the // Google map Code // comment line
+                                    the google.maps.LatLng variable is used to set the location of the map
+          #map_canvas
+            // Google map load error message
+            a.openGoogleMap
+              i.fa.fa-map-marker.fa-1x
+              strong Click to see Map Location
+      .row-fluid
+        .span5
+          h5.upperCase.bold_weight  Office Address:
+          hr
+          h6
+            | 0025 street name
+            br
+            | los Angle, 23589, USA
+          hr
+          em
+            span.list6  123.123.2586
+            span.list1  +044-3658954869
+            span.list2
+              a admin@websitename.com
+          ul.font_awesome
+            li
+              a
+                i.fa.fa-facebook
+            li
+              a
+                i.fa.fa-twitter
+            li
+              a
+                i.fa.fa-google-plus
+            li
+              a
+                i.fa.fa-flickr
+            li
+              a
+                i.fa.fa-pinterest
+          hr.separator_mini
+        .span7
+          .row-fluid
+            .span12
+              h5.bold_weight  SEND MESSAGE:
+              hr
+          .row-fluid.transparent
+            // Email contact Form
+            form(name='contact ', method='post')
+              .row-fluid
+                .span6
+                  input#name.span12(type='text', value='Name', name='name', onfocus='if(this.value == "Name") {this.value = "";}', onblur='if (this.value == "") {this.value = "Name";}')
+                .span6
+                  input#email.span12(type='text', value='Email', name='email', onfocus='if(this.value == "Email") {this.value = "";}', onblur='if (this.value == "") {this.value = "Email";}')
+              .row-fluid
+                .span12
+                  textarea#comments.span12(cols='30', rows='5', name='comments', onfocus='if(this.value == "Comments...") {this.value = "";}', onblur='if (this.value == "") {this.value = "Comments...";}') Comments...
+              .row-fluid
+                .span6
+                  button#email_submit.button.transparent.alignLeft(type='submit') SEND
+                  #reply_message
+      hr.separator_mini
