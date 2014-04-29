@@ -15,64 +15,44 @@
       .row-fluid
         .span12
           h6
-            | First timer? No worries, the guide below should get you up and running in no time. Reach a snag?
-            a(href='https://ethereum.slack.com/messages/general') Let us know how to improve it.
-          br
+            :markdown
+              First timer? No worries, the guide below should get you up and running in no time. Reach a snag? [Let us know how to improve it.](https://ethereum.slack.com/messages/general)
+
       h2 Step One: Google Apps
       ul
         li
-          a(href='http://mail.ethereum.org', target='_blank') Mail
-          | ,
-          a(href='http://calendar.ethereum.org', target='_blank') Calendar
-          | ,
-          a(href='http://docs.google.com', target='_blank') Docs
-        li
-          | Username:
-          code &lt;firstname.lastname&gt;@ethereum.org
-        li
-          | Password:
-          code &lt;supplied to you&gt;
-      p
-        | After you’re done, you can
-        a(href='https://support.google.com/mail/troubleshooter/1668960?authuser=1&amp;rd=1') sync your account
-        | in your preferred desktop or mobile client.
-      h2 Step Two: WorkingOn
-      p
-        a(href='https://www.workingon.co/') Create an account
-        | with your
-        code @ethereum.org
-        | email &amp; all your updates will automagically be posted to slack in the
-        a(href='https://ethereum.slack.com/messages/workingon') #workingon
-        | channel. Each morning a summary email will be sent out with the prior day’s activities… and if you forgot to mention anything, just reply with those items.
-      p
-        | In fact, you can also keep WorkingOn updated while on-the-go by sending an email to
-        a(href='mailto:today@m.workingon.co') today@m.workingon.co
-        | from your
-        code @ethereum.org
-        | email. Put one task per line, like this:
-        pre
-          | checking out the WorkingOn tools
-          | testing the email tool
-          | installing some of the other tools
-          | -
-          | Mihai
+          :markdown
+            [Mail](http://mail.ethereum.org), [Calendar](http://calendar.ethereum.org), [Docs](http://docs.google.com)
 
-      p
-        | The important thing is to
-        strong try and make a habit of writing short updates
-        | to keep the entire team in sync. This tool is tremendously useful for everyone to stay in sync but only works if we all use it :)
+        li Username: `&lt;firstname.lastname&gt;@ethereum.org`
+        li Password: `&lt;supplied to you&gt;`
+
+      p After you’re done, you can [sync your account](https://support.google.com/mail/troubleshooter/1668960?authuser=1&amp;rd=1) in your preferred desktop or mobile client.
+      h2 Step Two: WorkingOn
+      :markdown
+        [Create an account](https://www.workingon.co/) with your `@ethereum.org` email & all your updates will
+        automagically be posted to slack in the [#workingon](https://ethereum.slack.com/messages/workingon) channel.
+        Each morning a summary email will be sent out with the prior day’s activities... and if you forgot to mention anything, just reply with those items.
+
+        In fact, you can also keep WorkingOn updated while on-the-go by sending an email to [today@m.workingon.co](mailto:today@m.workingon.co)
+        from your `@ethereum.org` email. Put one task per line, like this:
+        ```
+        checking out the WorkingOn tools
+        testing the email tool
+        installing some of the other tools
+        -
+        Mihai
+        ```
+
+        The important thing is to **try and make a habit of writing short updates** to keep the entire team in sync. This tool is tremendously useful for everyone to stay in sync but only works if we all use it :)
+
       h2 Step Three: Slack
-      p
-        a(href='https://ethereum.slack.com/signup') Slack
-        | is our primary communication and sharing tool. It integrates with WorkingOn, GitHub, and
-        a(href='https://ethereum.slack.com/services/2261375141') Google Drive
-        | . They've also got mobile clients for
-        a(href='https://itunes.apple.com/us/app/slack-team-communication/id618783545?mt=8') iPhone
-        | and
-        a(href='https://play.google.com/store/apps/details?id=com.Slack') Android
-        | .
-      p
-        | The next thing is to look for the ethereum #channels relevant to your interests and domain(s) of activity and join in. If you have any questions please check the Questions tab. See you in
-        a(href='https://ethereum.slack.com/messages/random') #random
-        | !
+      :markdown
+        [Slack](https://ethereum.slack.com/signup) is our primary communication and sharing tool.
+        It integrates with WorkingOn, GitHub, and [Google Drive](https://ethereum.slack.com/services/2261375141).
+        They've also got mobile clients for [iPhone](https://itunes.apple.com/us/app/slack-team-communication/id618783545?mt=8)
+        and [Android](https://play.google.com/store/apps/details?id=com.Slack).
+
+        The next thing is to look for the ethereum #channels relevant to your interests and domain(s) of activity and join in.
+        If you have any questions please check the Questions tab. See you in [#random](https://ethereum.slack.com/messages/random)!
     hr.separator_mini
