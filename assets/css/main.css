@@ -1092,8 +1092,10 @@ li.current-img .overlay{
 	.mobile_header{
 		width:100%;
 		display:block;
-		position:absolute;
+		/*position:absolute;*/
 		z-index:23658972;
+		margin-bottom: 50px;
+		margin-left: 15px;
 		}
 
 	.mCSB_container{ padding-top:10px; padding-bottom:10px;}
