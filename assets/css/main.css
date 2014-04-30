@@ -41,7 +41,7 @@
 		top:55px;
 		height:130px !important;
 
-		padding: 10px;
+		margin-right: 50px;
 
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
@@ -55,11 +55,13 @@
 
 	.logo.center_position{
 		right:-75px;
+		margin-top:25px;
+		margin-left: 25px;
 		}
 
 		.mobile_header{
 			position:relative;
-			width:100%
+			width:90%
 			}
 
 		.mobile_header .logo_holder {
@@ -106,9 +108,9 @@
 		.logo {
 			top:15px;
 		}
-		.mobile_header .logo{
+/*		.mobile_header .logo{
 			left:-20px;
-			}
+			}*/
 	}
 
 	.shadow_img{
@@ -1095,7 +1097,7 @@ li.current-img .overlay{
 		display:block;
 		/*position:absolute;*/
 		z-index:23658972;
-		margin-bottom: 50px;
+		margin-bottom: 75px;
 		margin-left: 15px;
 		}
 
