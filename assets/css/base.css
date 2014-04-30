@@ -1762,8 +1762,11 @@
 			left:-70px;
 			top:40px;
 			}
-		.bodyContainer.mobile .page_close{ right:30px; }
+		.bodyContainer.mobile .page_close{
+			/*right:30px; */
+			visibility: hidden;
 		}
+	}
 
 
 
