@@ -283,7 +283,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 		}
 	a.services:hover .description {
 		background-color: #FFFFEE;
-		background-color: rgba(245, 80, 136, .90);
+		background-color: rgba(255, 255, 238, 0.5);
 		}
 	a.services:hover .description i{
 		color: #333333 !important;
@@ -586,9 +586,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 		}
 
 code, pre {
-	color: #ffffff;
-	background-color: #000000;
+	color: #000;
+	background-color: rgba(255, 255, 238, 0.5);
 }
+
 /* Form object style */
 	input[type="text"],
 	input[type="password"],
